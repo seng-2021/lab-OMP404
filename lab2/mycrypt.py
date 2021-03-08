@@ -2,7 +2,7 @@ import codecs
 
 def encode(s):
     if not isinstance(s,str):
-        raise ValueError
+        raise TypeError
     origlen = len(s)
     crypted = ""
     digitmapping = dict(zip('1234567890!"#€%&/()=','!"#€%&/()=1234567890'))
