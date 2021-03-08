@@ -10,8 +10,7 @@ def encode(s):
         raise ValueError
     for c in s:
         if c.isalpha():
-            if c.islower():
-                c=c.upper()
+            c=c.upper()
             # Rot13 the character for maximum security
             crypted+=codecs.encode(c,'rot13')
             break
