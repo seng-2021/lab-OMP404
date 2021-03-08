@@ -19,5 +19,5 @@ def encode(s):
     return crypted
 
 def decode(s):
-    return s
+    return encode(s).lower()
 
