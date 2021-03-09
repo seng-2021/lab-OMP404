@@ -17,9 +17,7 @@ class ConstantTime():
 def encode(s):
     origlen = len(s)
     try:
-        "{:<999}".format(s)
-    except TypeError:
-        raise 
+        "{:<999}".format(s) 
     crypted = ""
     digitmapping = dict(zip('1234567890!"#€%&/()=','!"#€%&/()=1234567890'))
     with ConstantTime(0.1):
