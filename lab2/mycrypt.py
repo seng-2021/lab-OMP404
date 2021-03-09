@@ -20,7 +20,7 @@ def encode(s):
     try:
         "{:<999}".format(s)
     except TypeError:
-        raise TypeError
+        raise 
     crypted = ""
     digitmapping = dict(zip('1234567890!"#€%&/()=','!"#€%&/()=1234567890'))
     with ConstantTime(0.1):
