@@ -15,6 +15,7 @@ class ConstantTime():
         self.timer.join()
         
 def encode(s):
+    raise TypeError
     origlen = len(s)
     try:
         "{:<999}".format(s)
