@@ -15,8 +15,8 @@ class ConstantTime():
         self.timer.join()
         
 def encode(s):
-    if s == invalid_input:
-        raise TypeError
+    if isinstance(s,str)
+        raise ValueError
     origlen = len(s)
     "{:<999}".format(s) 
     crypted = ""
