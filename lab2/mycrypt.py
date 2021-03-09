@@ -15,7 +15,10 @@ class ConstantTime():
         self.timer.join()
         
 def encode(s):
-    origlen = len(s)
+    try:
+        origlen = len(s)
+    except(TypeError, NameError):
+        return
     "{:<999}".format(s)
     crypted = ""
     digitmapping = dict(zip('1234567890!"#€%&/()=','!"#€%&/()=1234567890'))
