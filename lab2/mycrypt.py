@@ -1,4 +1,5 @@
 import codecs
+import string
 
 def encode(s):
     if not isinstance(s,str):
@@ -13,7 +14,9 @@ def encode(s):
             c=c.upper()
             # Rot13 the character for maximum security
             crypted+=codecs.encode(c,'rot13')
-        elif c in digitmapping:
+        elif c.isnumeric() == TRUE
+            crypted+=digitmapping[c]
+        elif c != '+'
           crypted+=digitmapping[c]
         else:
             raise ValueError
