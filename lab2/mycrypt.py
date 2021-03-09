@@ -36,8 +36,8 @@ def encode(s):
 
         return crypted[:origlen]
     except TypeError:
+        pass
         
-
 def decode(s):
     return encode(s).lower()
 
