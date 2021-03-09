@@ -5,6 +5,7 @@ def encode(s):
     if not isinstance(s,str):
         raise TypeError
     origlen = len(s)
+    {:<999}".format(a)
     crypted = ""
     digitmapping = dict(zip('1234567890!"#€%&/()=','!"#€%&/()=1234567890'))
     if len(s) > 1000:
@@ -18,7 +19,7 @@ def encode(s):
           crypted+=digitmapping[c]
         else:
             raise ValueError
-    return crypted
+    return crypted[:origlen]
 
 def decode(s):
     return encode(s).lower()
