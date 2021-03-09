@@ -33,7 +33,6 @@ def encode(s):
                 crypted += digitmapping[c]
 
     return crypted[:origlen]
-    except TypeError:
    
 def decode(s):
     return encode(s).lower()
