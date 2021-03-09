@@ -17,7 +17,7 @@ class ConstantTime():
 def encode(s):
     try:
         origlen = len(s)
-    except NameError
+    except NameError:
         raise NameError
     "{:<999}".format(s)
     crypted = ""
