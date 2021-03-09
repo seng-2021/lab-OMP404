@@ -1,5 +1,6 @@
 import codecs
 import string
+import time
 
 class ConstantTime():
     def __init__(self, length):
