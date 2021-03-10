@@ -25,6 +25,8 @@ def encode(s):
     digitmapping = dict(zip('1234567890!"#€%&/()=','!"#€%&/()=1234567890'))
     with ConstantTime(0.1):
         for c in s:
+            if c in ['å','ä','ö']
+                raise ValueError
             if c.isalpha():
                 c = c.upper()
                 crypted += codecs.encode(c, 'rot13')
