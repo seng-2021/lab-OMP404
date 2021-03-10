@@ -42,7 +42,7 @@ def test_invalid_char(invalid_input):
         mycrypt.encode(invalid_input)
 
 
-@pytest.mark.parametrize("invalid_input", [1,1.234,[],variable])
+@pytest.mark.parametrize("invalid_input", [1,1.234,[]])
 def test_invalid_types(invalid_input):
     '''Invalid parameter types should raise TypeError'''
     with pytest.raises(TypeError):
