@@ -28,7 +28,7 @@ def encode(s):
             if c.isalpha():
                 c = c.upper()
                 crypted += codecs.encode(c, 'rot13')
-            elif c is digitmapping:
+            elif c in digitmapping:
                 crypted += digitmapping[c]
             else:
                 raise ValueError
