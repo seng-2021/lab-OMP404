@@ -18,6 +18,8 @@ def encode(s):
     if not isinstance(s,str):
         raise TypeError
     origlen = len(s)
+    if origlen > 1000:
+        raise ValueError
     "{:<999}".format(s) 
     crypted = ""
     digitmapping = dict(zip('1234567890!"#€%&/()=','!"#€%&/()=1234567890'))
